@@ -26,7 +26,8 @@ public class FizzBuzz {
      * @throws IllegalArgumentException if b is zero
      */
     public static boolean divides(int a, int b) throws IllegalArgumentException {
-        throw new NotImplementedException();
+    	return a % b == 0;
+        
     }
 
     /**
@@ -41,9 +42,14 @@ public class FizzBuzz {
      * @return a message according to the format above, or null if n is not divisible by either 3 or 5
      */
     public static String message(int n) {
-        throw new NotImplementedException();
+      if(divides(n,3) && !divides(n,5)) return  n + ": Fizz";
+      if(divides(n,5) && !divides(n,3)) return n + ": Buzz";
+      if(divides(n,3) && divides(n,5)) return n + ": FizzBuzz";
+	  return null;
+    
     }
 
+    
     /**
      * Generates an array of messages to print for a given range of numbers.
      * If there is no message for an individual number (i.e., `message(n)` returns null),
@@ -55,9 +61,24 @@ public class FizzBuzz {
      * @throws IllegalArgumentException if the given end is less than the given start
      */
     public static String[] messages(int start, int end) throws IllegalArgumentException {
-        throw new NotImplementedException();
+       String[] returnarray = null;
+       int count = 0, temp = 0; 
+      
+       for(int i = 0; end < start; i++);
+       if(end < start); 
+	return returnarray;
+       
+    	   
+       
+       
+    
+       
+       
+       
     }
-
+    
+    
+    
     /**
      * For this main method, iterate over the numbers 1 through 115 and print
      * the relevant messages to sysout
